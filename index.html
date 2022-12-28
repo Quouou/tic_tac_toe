@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+  <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Tic-Tac-Toe</title>
+      <link rel="stylesheet" href="style.css">
+    </head>
+
+  <body>
+    <div id="gameContainer"> <!-- Contains the Game -->
+      <h1>Tic-Tac-Toe</h1>
+      <div id="cellContainer"> <!-- Contains the Table -->
+        <div cellIndex="0" class="cell"></div>
+        <div cellIndex="1" class="cell"></div>
+        <div cellIndex="2" class="cell"></div>
+        <div cellIndex="3" class="cell"></div>
+        <div cellIndex="4" class="cell"></div>
+        <div cellIndex="5" class="cell"></div>
+        <div cellIndex="6" class="cell"></div>
+        <div cellIndex="7" class="cell"></div>
+        <div cellIndex="8" class="cell"></div>
+      </div>
+      <h2 id="statusText"></h2>
+      <button id="btnRestart">Restart</button>
+      <div id="instruction">
+        <h2>Rules of the Game</h2>
+        <ol>
+          <li>The game is played on a grid that's 3x3 squares.</li><br>
+          <li>The game has 2 Players: Player X and Player O. </li><br>
+          <li>
+            The game begins with Player X then followed by Player O. Players take turns putting their marks
+            in the empty squares.
+          </li><br>
+          <li>
+            The first player to get 3 of their marks in a row (horizontally, vertically, or diagonally) is
+            the winner.
+          </li><br>
+          <li>
+            When all of the squares are full, the game is automatically over. If no player has 3 marks in a
+            row, the game ends in a draw. 
+          </li>
+        </ol>
+      </div>
+    </div>
+
+    <!-- Script source is placed here because DOM must load before script. -->
+    <script src="script.js"></script>
+  </body>
+</html>
